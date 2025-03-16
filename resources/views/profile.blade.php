@@ -11,22 +11,22 @@
         }
     </style>
 </head>
-<body class="flex items-center justify-center min-h-screen bg-gray-200">
- 
+<body class="flex items-center justify-center min-h-screen bg-gray-200">   
 <div class="bg-white p-8 rounded-lg shadow-lg w-80 text-center">
-    <img class="w-24 h-24 mx-auto rounded-full border-4 border-blue-200 hover:animate-bounce" src="{{asset('images/fotoprofile.jpeg')}}" alt="Foto Profile">
+<h1 class="text-3xl font-bold text-blue-800 mb-4">Profil User</h1> 
+    <img class="w-24 h-24 mx-auto rounded-full border-4 border-blue-200 hover:animate-bounce" src="{{asset('assets/img/fotoprofile.jpeg')}}" alt="Foto Profile">
        <div class="mt-4 space-y-2">
         <div class="bg-gray-200 text-gray-800 font-semibold py-2 rounded-md px-4"> 
-            <span><?= $nama ?></span>
+        <span>{{ $nama }}</span>
         </div>
         <div class="bg-gray-200 text-gray-800 font-semibold py-2 rounded-md px-4"> 
-            <span><?= $kelas ?></span>
+            <span>{{ $npm }}</span>
         </div>
         <div class="bg-gray-200 text-gray-800 font-semibold py-2 rounded-md px-4">
-           <span><?= $npm ?></span>
+            <span>{{ $nama_kelas !== 'Kelas tidak ditemukan' ? $nama_kelas : '' }}</span>
         </div>
     </div>
 </div>
 
 </body>
-</html>
+</html> 
